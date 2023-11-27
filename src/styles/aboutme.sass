@@ -1,0 +1,36 @@
+@use 'variables'
+@use 'mixins'
+
+#about
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding: 2rem 6rem
+    line-height: 1.5
+    font-size: 1.5em
+
+    h1
+        color: variables.$text-color
+        font-size: 2.5rem
+        margin-bottom: 1rem
+
+    p
+        color: variables.$text-color-paragraph
+        font-size: 1.5rem
+        font-family: variables.$font-stack
+
+    @media screen and (max-width: 768px) 
+        padding: 2rem
+        font-size: 1.2em
+
+        h1 
+            font-size: 2rem
+
+    @media screen and (max-width: 480px) 
+        padding: 1rem
+        font-size: 1em
+
+        h1 
+            font-size: 1.8rem
+     
