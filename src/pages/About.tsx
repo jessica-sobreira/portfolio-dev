@@ -6,7 +6,7 @@ export const Aboutme = () => {
         <>
         <div className="links">
         <Link to='/'>Home</Link>
-        <Link to='/aboutme'>Sobre mim</Link>
+        <Link to='/aboutme'>Sobre</Link>
         <Link to='/projects'>Projetos</Link>
         <Link to='/contact'>Contato</Link>
         </div>     
