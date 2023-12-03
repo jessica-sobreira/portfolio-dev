@@ -6,32 +6,34 @@
     color: variables.$text-color
     text-align: center
     margin-bottom: 2rem
-    margin-top: 6rem
+    margin-top: 6rem  
+
 
 .projects-container 
   display: flex
   gap: 3.75rem
-  margin-left: 2rem
-  margin-right: auto
   justify-content: center
   align-items: center
   flex-wrap: wrap
+  margin: 0 auto
 
-  .box
+
+  .box 
     position: relative
     cursor: pointer
     transition: 0.3s
-    min-width: 30%
+    min-width: 100% 
     display: flex
     align-items: center
     flex-direction: column
-    margin-bottom: 3rem  
+    margin-bottom: 3rem
 
-    &:hover
+    &:hover 
       position: relative
       z-index: 2
+    
 
-    &:after
+    &:after 
       content: ""
       display: block
       position: absolute
@@ -39,8 +41,9 @@
       height: 0.3rem
       bottom: 0.1rem
       background-image: variables.$bg-color-secondary
+    
 
-    &:before
+    &:before 
       content: ""
       display: block
       position: absolute
@@ -50,14 +53,17 @@
       display: none
       visibility: hidden
       animation: fade 1s
+    
 
-    img
-      width: 60%  
+    img 
+      width: 70% 
       height: auto
+    
+  
 
-  .description
+  .description 
     font-weight: 500
-    font-size: 1.1rem
+    font-size: 1rem // Tamanho da fonte ajustado
     color: variables.$text-color-paragraph
     margin-top: 1rem
     text-align: center
@@ -66,33 +72,43 @@
     justify-content: center
     flex-direction: column
 
-    h2
-      font-size: 1.5rem
+    h2 
+      font-size: 1.25rem // Tamanho da fonte ajustado
       color: variables.$text-color
-      margin-bottom: 1rem
-
+      margin-bottom: 0.5rem // Margem inferior reduzida
     
-    p
+
+    p 
       font-weight: 500
-      font-size: 1.1rem
+      font-size: 1rem
       color: variables.$text-color-paragraph
       margin-bottom: 1rem
       text-align: center
+    
 
-    .button-description
+    .button-description 
       background-color: variables.$bg-color-secondary
       color: variables.$text-color
       padding: 0.5rem 1rem
       border: none
       border-radius: 8px
       cursor: pointer
-      font-size: 1rem
+      font-size: 0.9rem // Tamanho da fonte ajustado
       transition: background-color 0.3s ease-in-out
       margin-bottom: 1rem
 
       &:hover 
         background-color: purple
+      
 
       a 
         text-decoration: none
         color: variables.$text-color
+   
+
+@media screen and (max-width: 768px) 
+  .projects-container   
+    margin: 0 auto
+    margin-right: 20px
+    margin-left: 20px 
+       
