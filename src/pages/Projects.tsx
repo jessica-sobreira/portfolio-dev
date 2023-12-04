@@ -57,6 +57,18 @@ export const Project = () => {
                 </div>
             </div>
 
+            <div className='boxes'>   
+                <div className="description">
+                    <h2>Busque Carros</h2>
+                    <p>Este projeto é uma aplicação simples para buscar, adicionar, editar e remover informações sobre carros.
+                        <br></br>Tecnologias utilizadas: React, TypeScript, Vite e CSS.
+                    </p>
+                    <button className='button-description'><a href="https://busque-carros.vercel.app/" target="_blank">Ver Página</a></button>
+                </div>
+                <div className='box'>
+                    <img src="/busque-carros.png" alt="Busque Carros" />
+                </div>
+            </div>
 
 
 
